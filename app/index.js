@@ -24,7 +24,7 @@ io.on("connection" , function (socket) {
 
 
 app.get('/' , function (req , res){
-    res.render("index")
+    res.render("../app/views/index.ejs")
 })
 
 server.listen(3000);

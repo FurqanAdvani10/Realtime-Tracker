@@ -1,8 +1,5 @@
 const socket = io()
 
-console.log("script.k")
-
-
 if(navigator.geolocation){
     navigator.geolocation.watchPosition(
     (position) => {
