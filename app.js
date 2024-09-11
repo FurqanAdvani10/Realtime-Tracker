@@ -5,12 +5,13 @@ const path = require('path')
 const socketio = require("socket.io")
 const server = http.createServer(app)
 const io = socketio(server)
+const PORT = process.env.PORT || 3001
 
 
 
 app.set("view engine","ejs")
 
-app.use(express.static(path.join(__dirname, "../public")))
+app.use(express.static(path.join(__dirname, "public")))
 
 io.on("connection" , function (socket) {
     socket.on("send-location", function(data){
@@ -27,6 +28,6 @@ app.get('/' , function (req , res){
     res.render("index")
 })
 
-server.listen(4000);
-
-module.exports = app;
+server.listen(PORT , () => {
+    console.log(`server running on ${PORT}`)
+});

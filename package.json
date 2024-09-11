@@ -2,14 +2,15 @@
   "name": "realtime-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "./api/index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "expree": "^2.1.0",
     "netlify-lambda": "^2.0.16",
