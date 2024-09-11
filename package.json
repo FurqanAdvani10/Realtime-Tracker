@@ -2,13 +2,12 @@
   "name": "realtime-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./api/index.js",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +15,8 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "expree": "^2.1.0",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0",
     "socket.io": "^4.7.5"
   }
 }
